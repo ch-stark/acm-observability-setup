@@ -13,3 +13,10 @@ Bucket name can be specified in extra-vars.yml as well.
 ```
 ansible-playbook acm_setup_observability.yml -e @extra_vars.yml
 ```
+
+ aws s3api create-bucket --bucket testcstark  --region eu-central-1 --create-bucket-configuration LocationConstraint=eu-central-1 
+{
+    "Location": "http://testcstark.s3.amazonaws.com/"
+}
+
+
